@@ -1,0 +1,181 @@
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f8f8f8;
+    padding: 20px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+.nav-links:hover{
+    color: #fad96e;
+}
+
+.nav-links li {
+    margin-right: 20px;
+    position: relative; 
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    position: relative; 
+}
+
+.nav-links a::before,
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    background-color: #333;
+    bottom: 0;
+    transition: width 0.3s ease; /* Добавляем анимацию для плавного расширения */
+}
+
+.nav-links a::before {
+    background-color: #fad96e;
+    left: 50%; /* Начальное положение псевдоэлемента слева */
+    transform: translateX(-50%); /* Центрируем псевдоэлемент относительно текста */
+}
+
+.nav-links a::after {
+    background-color: #fad96e;
+    right: 50%; /* Начальное положение псевдоэлемента справа */
+    transform: translateX(50%); /* Центрируем псевдоэлемент относительно текста */
+}
+
+.nav-links a:hover::before,
+.nav-links a:hover::after {
+    width: 100%; /* Расширяем псевдоэлементы при наведении на ссылку */
+}
+
+h1{
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+h2{
+    margin-top: -30px;
+    padding: 10px 0px 0px 0px ;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.5s ease;
+}
+.fon1,
+.fon2,
+.fon3{
+    background-color: #c7c5c5;
+    width: 1220px;
+    height: 330px;
+    margin:-80px;
+    margin-left: 30px;
+    display: flex;
+    
+}
+.imgf1,
+.imgf2,
+.imgf3{
+    width: 200px;
+    height: 250px;
+    margin-top: -250px;
+    margin-left: 50px;
+
+
+}
+
+.img1,
+.img2,
+.img3{
+    width: 330px;
+    height: 240px;
+    margin-left: 68px;
+    margin-top: 30px;
+    opacity: 0.2;
+}
+
+.img1:hover,
+.img2:hover,
+.img3:hover{
+    width: 350px;
+    height: 260px;
+    margin-left: 68px;
+    margin-top: 30px;
+    opacity: 1;
+    transition: transform 0.8s ease;
+    transform: scale(1.2);
+    position: relative;
+    overflow: hidden;
+}
+h1{
+    text-align: center;
+    font-size: 60px;
+    margin: 60px;
+    margin-bottom: 100px;
+    
+}
+.name1,
+.name2,
+.name3{
+    font-size: 25px;
+    margin-left: 300px;
+    position: relative; 
+    top: -270px;
+    display: grid;
+
+
+
+}
+.info1,
+.info2,
+.info3{
+    margin-left: 260px;
+    position: relative; 
+    text-align: center; 
+    display: flex; /* Установка контейнера flex для вертикального выравнивания */
+    align-items: center; /* Выравнивание по вертикали по центру */
+    top: -260px ;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 3 рівні стовпці */
+    grid-gap: 10px; 
+    font-size: 18px; 
+    
+}
+.fff{
+    text-align: center;
+
+    
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0 20px;
+    margin: 0px 0px -30px 0px;
+    
+}
